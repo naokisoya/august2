@@ -8,12 +8,12 @@
 	<% end -%>
 <% end %>
 <% @tweets.each do |tweet| %>
-<div id="tweet">
-	<hr />
-	<span style="font-weight: bold;">
-		<%= tweet.user_id %>
-	</span>
-	<%= tweet.content %>
-	<br />(<%= distance_of_time_in_words_to_now(tweet.created_at) %> ago)
-</div>
+	<div id="tweet">
+		<hr />
+		<span style="font-weight: bold;">
+			<%= tweet.user_id %>
+		</span>
+		<%= tweet.content %>
+		<br />(<%= distance_of_time_in_words_to_now(tweet.created_at) %> ago)
+	</div>
 <% end %>
